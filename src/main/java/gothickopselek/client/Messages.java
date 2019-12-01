@@ -12,7 +12,11 @@ public class Messages
 		String kropka = message.substring(message.length() - 1);
 		if (kropka.contains(".") || kropka.contains("!") || kropka.contains("?")) {
 		}else {
-			event.setMessage(message + ".");
+			if (message.contains("/"))
+			{
+			}else {
+				event.setMessage(message + ".");
+			}
 		}
 	}
 }

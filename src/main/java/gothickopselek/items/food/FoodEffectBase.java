@@ -41,6 +41,7 @@ public class FoodEffectBase extends FoodBase
 				player.addPotionEffect(new PotionEffect(Potion.getPotionById(9), 5000, 0));
 				w.commandManager.executeCommand(w, "stopsound " + player.getName());
 				w.commandManager.executeCommand(w, "playsound gothickopselek:fagsound player " + player.getName() + " " + posX + " " + posY + " " + posZ + " 100 1");
+
 				
 			}else if(stack.getItem() == ModItems.beer)
 			{

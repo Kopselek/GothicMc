@@ -4,7 +4,7 @@ import gothickopselek.Reference;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 
-public final class SoundHandler
+public class SoundHandler
 {
 	public static SoundEvent fagsound;
 	private static int size = 0;

@@ -4,9 +4,11 @@ package gothickopselek.handlers;
 import gothickopselek.init.ModPotion;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.util.SoundCategory;
 import net.minecraftforge.client.event.EntityViewRenderEvent.FogColors;
 import net.minecraftforge.client.event.EntityViewRenderEvent.FogDensity;
 import net.minecraftforge.client.event.RenderPlayerEvent;
+import net.minecraftforge.client.event.sound.PlaySoundEvent;
 import net.minecraftforge.event.terraingen.BiomeEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.EventPriority;
@@ -61,6 +63,7 @@ public class FogHandler
 	{
 		if(biomeSet)
 		{
+			
 			event.setNewColor(16733695);
 		}
 		else
@@ -82,6 +85,13 @@ public class FogHandler
 			event.setCanceled(false);
 		}
 	}
-	
-    
+	@SideOnly(Side.CLIENT)
+    @SubscribeEvent
+    public void playFogMusic(PlaySoundEvent event)
+    {
+    	if(event.getSound() != null && event.getSound().getCategory() != null && event.getSound().getCategory() == SoundCategory.MUSIC)
+    	{
+    		event.setResultSound(null);
+    	}
+    }
 }

@@ -1,3 +1,29 @@
 itemGroup.GothicMcTab=GothicMcTab
 
 item.kosa.name=Kosa
+
+tile.cloud.name=Chmura
+
+item.fag.name=Zew Nocy
+
+item.beer.name=Gin
+
+effect.jazz=Spizgany
+
+effect.beer=Nayebany
+
+potion.effect.jazz=Pizga sznura
+
+splash_potion.effect.jazz=kiedy niunie pukam w
+
+lingering_potion.effect.jazz=wannie, na mnie szata i krawacik
+
+tipped_arrow.effect.jazz=suko to designer
+
+potion.effect.beer=Sprint2DJ
+
+splash_potion.effect.beer=jest fajny ale
+
+lingering_potion.effect.beer=ma bardzo duzego
+
+tipped_arrow.effect.beer=krasnoludka moj kolego

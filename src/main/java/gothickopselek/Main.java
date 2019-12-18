@@ -11,6 +11,7 @@ import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 
 @Mod(modid = Reference.modID, name = Reference.modName, version = Reference.modVersion, acceptedMinecraftVersions = Reference.modMcVersion)
 public class Main 
@@ -39,7 +40,13 @@ public class Main
 	{
 		proxy.postInit(event);
 	}
-
+	
+	@EventHandler
+	public void Serverinit(FMLServerStartingEvent event)
+	{
+		proxy.serverInit(event);
+	}
+	
 	public void sendToServer(TextComponentString textComponentString) {
 		
 	}

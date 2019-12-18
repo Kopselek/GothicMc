@@ -9,8 +9,8 @@ public class Messages
 	public void chat(ClientChatEvent event)
 	{
 		String message = event.getMessage();
-		String kropka = message.substring(message.length() - 1);
-		if (kropka.contains(".") || kropka.contains("!") || kropka.contains("?")) {
+		String dot = message.substring(message.length() - 1);
+		if (dot.contains(".") || dot.contains("!") || dot.contains("?")) {
 		}else {
 			if (message.contains("/"))
 			{

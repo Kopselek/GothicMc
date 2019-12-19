@@ -2,11 +2,11 @@ package gothickopselek.items.food;
 
 import gothickopselek.init.ModItems;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.MobEffects;
 import net.minecraft.item.EnumAction;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
-import net.minecraft.server.MinecraftServer;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -34,17 +34,14 @@ public class FoodEffectBase extends FoodBase
 			player.addPotionEffect(new PotionEffect(effect.getPotion(), effect.getDuration(), effect.getAmplifier(), effect.getIsAmbient(), effect.doesShowParticles()));
 			if(stack.getItem() == ModItems.Fag)
 			{
-				MinecraftServer w = worldIn.getMinecraftServer();
-				int posX = player.getPosition().getX();
-				int posY = player.getPosition().getY();
-				int posZ = player.getPosition().getZ();
-				player.addPotionEffect(new PotionEffect(Potion.getPotionById(9), 5000, 0));
-				w.commandManager.executeCommand(w, "stopsound " + player.getName());
-				w.commandManager.executeCommand(w, "playsound gothickopselek:fagsound player " + player.getName() + " " + posX + " " + posY + " " + posZ + " 100 1");
-
+				player.addPotionEffect(new PotionEffect(Potion.getPotionById(9), 4600, 0));
+				
+				//ISound iSound = new PositionedSoundRecord(SoundHandler.fagsound, SoundCategory.MUSIC, 10.0F, 1.0F, player.getPosition());
+				//Minecraft.getMinecraft().getSoundHandler().playSound(iSound);
 				
 			}else if(stack.getItem() == ModItems.beer)
 			{
+				player.addPotionEffect(new PotionEffect(MobEffects.BLINDNESS, 4600, 1));
 				player.addPotionEffect(new PotionEffect(Potion.getPotionById(2), 5000, 0));
 			}
 			

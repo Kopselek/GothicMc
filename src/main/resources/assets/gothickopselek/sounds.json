@@ -3,6 +3,6 @@
         "category": "music", 
         "sounds": ["gothickopselek:fagsound"], 
         "subtitle": "gothickopselek.subtitle.fagsound" ,
-        "stream": true
+        "stream": "true"
     }
 }

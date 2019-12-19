@@ -55,7 +55,7 @@ public class BW
 	public void respawn(PlayerRespawnEvent event)
 	{
 		EntityPlayer p = event.player;
-		p.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 3000, 0));
+		p.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 5000, 1));
 		p.addPotionEffect(new PotionEffect(MobEffects.BLINDNESS, 500, 0));
 		p.addPotionEffect(new PotionEffect(MobEffects.NAUSEA, 2000, 0));
 		p.setHealth(2);

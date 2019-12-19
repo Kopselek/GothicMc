@@ -1,6 +1,7 @@
 package gothickopselek;
 
 import gothickopselek.client.Messages;
+import gothickopselek.client.PlayerInputEvent;
 import gothickopselek.handlers.FogHandler;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.client.settings.KeyBinding;
@@ -25,6 +26,7 @@ public class ClientProxy extends CommonProxy
 	public void init(FMLInitializationEvent event)
 	{
 		super.init(event);
+		MinecraftForge.EVENT_BUS.register(new PlayerInputEvent());
 	}
 	@Override
 	public void postInit(FMLPostInitializationEvent event)

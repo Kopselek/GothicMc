@@ -8,6 +8,10 @@ item.fag.name=Zew Nocy
 
 item.beer.name=Gin
 
+item.coin_silver.name=Srebna moneta
+
+item.coin_gold.name=Zlota moneta
+
 effect.jazz=Upalony
 
 effect.beer=Nietrzezwy

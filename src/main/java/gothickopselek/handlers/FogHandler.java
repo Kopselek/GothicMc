@@ -68,7 +68,7 @@ public class FogHandler
 		}
 		else
 		{
-			event.setNewColor(1922333);
+			event.setNewColor(2263842);
 		}
 	}
 	

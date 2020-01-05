@@ -2,7 +2,6 @@ package gothickopselek.items.food;
 
 import gothickopselek.init.ModItems;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.MobEffects;
 import net.minecraft.item.EnumAction;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
@@ -36,12 +35,9 @@ public class FoodEffectBase extends FoodBase
 			{
 				player.addPotionEffect(new PotionEffect(Potion.getPotionById(9), 4600, 0));
 				
-				//ISound iSound = new PositionedSoundRecord(SoundHandler.fagsound, SoundCategory.MUSIC, 10.0F, 1.0F, player.getPosition());
-				//Minecraft.getMinecraft().getSoundHandler().playSound(iSound);
-				
 			}else if(stack.getItem() == ModItems.beer)
 			{
-				player.addPotionEffect(new PotionEffect(MobEffects.BLINDNESS, 4600, 1));
+				player.addPotionEffect(new PotionEffect(Potion.getPotionById(15), 5000, 1));
 				player.addPotionEffect(new PotionEffect(Potion.getPotionById(2), 5000, 0));
 			}
 			

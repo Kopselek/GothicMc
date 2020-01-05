@@ -5,11 +5,14 @@ import net.minecraft.command.CommandException;
 import net.minecraft.command.ICommandSender;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.server.MinecraftServer;
-import net.minecraftforge.event.entity.player.PlayerEvent.NameFormat;
+import net.minecraft.util.ResourceLocation;
 import java.util.Arrays;
+import gothickopselek.Reference;
 
 public class CommandImie extends CommandBase
 {
+	
+	public static final ResourceLocation NAME_CAP = new ResourceLocation(Reference.modID, "imie");
 	
 	@Override
 	public String getName() 
@@ -35,19 +38,22 @@ public class CommandImie extends CommandBase
 		return Arrays.toString(strArray);
 	}
 	
-	
 	@Override
 	public void execute(MinecraftServer server, ICommandSender sender, String[] args) throws CommandException 
 	{
 		if (sender instanceof EntityPlayer)
 		{
 			EntityPlayer p = (EntityPlayer) sender;
-			String pUsername = p.getName();
-			NameFormat pNick = new NameFormat(p, pUsername);
-			String imieArg = convertArrayToString(args);
-			p.setCustomNameTag(imieArg);
-			pNick.setDisplayname(imieArg);
-			p.refreshDisplayName();
+			if(p.getCustomNameTag() == "")
+			{
+				String imieArg = convertArrayToString(args);
+				String imieArgFix = imieArg.replace("[", "");
+				imieArgFix = imieArgFix.replace(",", "");
+				imieArgFix = imieArgFix.replace("]", "");
+				p.setCustomNameTag(imieArgFix);
+				p.setAlwaysRenderNameTag(true);
+				p.refreshDisplayName();
+			}
 		}
 	}
 

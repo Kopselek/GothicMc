@@ -4,6 +4,7 @@ import gothickopselek.blocks.TileEntityCloud;
 import gothickopselek.init.ModPotion;
 import gothickopselek.server.BW;
 import gothickopselek.server.MessageServer;
+import gothickopselek.server.NameFormat;
 import gothickopselek.server.commands.CommandImie;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.MinecraftForge;
@@ -36,6 +37,7 @@ public class CommonProxy
 	{
 		MinecraftForge.EVENT_BUS.register(new BW());
 		MinecraftForge.EVENT_BUS.register(new MessageServer());
+		MinecraftForge.EVENT_BUS.register(new NameFormat());
 	}
 	
 	public void serverInit(FMLServerStartingEvent event) 

@@ -12,6 +12,8 @@ item.coin_silver.name=Srebna moneta
 
 item.coin_gold.name=Zlota moneta
 
+item.coin_bronze.name=Bronzowa moneta
+
 effect.jazz=Upalony
 
 effect.beer=Nietrzezwy

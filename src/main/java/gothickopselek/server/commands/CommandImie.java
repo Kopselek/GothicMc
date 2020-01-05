@@ -50,8 +50,8 @@ public class CommandImie extends CommandBase
 				String imieArgFix = imieArg.replace("[", "");
 				imieArgFix = imieArgFix.replace(",", "");
 				imieArgFix = imieArgFix.replace("]", "");
+				
 				p.setCustomNameTag(imieArgFix);
-				p.setAlwaysRenderNameTag(true);
 				p.refreshDisplayName();
 			}
 		}

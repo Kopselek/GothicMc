@@ -2,7 +2,6 @@ package gothickopselek.init;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import gothickopselek.blocks.Cloud;
 import net.minecraft.block.Block;
 

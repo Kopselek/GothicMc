@@ -4,5 +4,53 @@
         "sounds": ["gothickopselek:fagsound"], 
         "subtitle": "gothickopselek.subtitle.fagsound" ,
         "stream": "true"
-    }
+    },
+"dark": { 
+        "category": "music", 
+        "sounds": ["gothickopselek:dark"], 
+        "subtitle": "gothickopselek.subtitle.dark" ,
+        "stream": "true"
+    }, 
+"forest": { 
+        "category": "music", 
+        "sounds": ["gothickopselek:forest"], 
+        "subtitle": "gothickopselek.subtitle.forest" ,
+        "stream": "true"
+    },
+"girl_singing": { 
+        "category": "music", 
+        "sounds": ["gothickopselek:girl_singing"], 
+        "subtitle": "gothickopselek.subtitle.girl_singing" ,
+        "stream": "true"
+    },  
+"gothic3": { 
+        "category": "music", 
+        "sounds": ["gothickopselek:gothic3"], 
+        "subtitle": "gothickopselek.subtitle.gothic3" ,
+        "stream": "true"
+    }, 
+"khorinis": { 
+        "category": "music", 
+        "sounds": ["gothickopselek:khorinis"], 
+        "subtitle": "gothickopselek.subtitle.khorinis" ,
+        "stream": "true"
+    }, 
+"normal": { 
+        "category": "music", 
+        "sounds": ["gothickopselek:normal"], 
+        "subtitle": "gothickopselek.subtitle.normal" ,
+        "stream": "true"
+    },
+"shantie": { 
+        "category": "music", 
+        "sounds": ["gothickopselek:shantie"], 
+        "subtitle": "gothickopselek.subtitle.shantie" ,
+        "stream": "true"
+    },
+"shantie2": { 
+        "category": "music", 
+        "sounds": ["gothickopselek:shantie2"], 
+        "subtitle": "gothickopselek.subtitle.shantie2" ,
+        "stream": "true"
+    }      
 }

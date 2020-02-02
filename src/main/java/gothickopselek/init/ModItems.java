@@ -19,4 +19,6 @@ public class ModItems
 	public static final Item Coin_silver = new ItemBase("coin_silver");
 	public static final Item Coin_gold = new ItemBase("coin_gold");
 	public static final Item Coin_bronze = new ItemBase("coin_bronze");
+	
+	public static final Item Picklock = new ItemBase("picklock");
 }

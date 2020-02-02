@@ -1,8 +1,6 @@
 itemGroup.GothicMcTab=GothicMcTab
 
-item.kosa.name=Kosa
-
-tile.cloud.name=Chmura
+item.picklock.name=Wytrych
 
 item.fag.name=Zew Nocy
 
@@ -12,7 +10,9 @@ item.coin_silver.name=Srebna moneta
 
 item.coin_gold.name=Zlota moneta
 
-item.coin_bronze.name=Bronzowa moneta
+item.coin_bronze.name=Br¹zowa moneta
+
+tile.cloud.name=Chmura
 
 effect.jazz=Upalony
 

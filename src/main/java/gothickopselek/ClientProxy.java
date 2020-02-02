@@ -1,5 +1,6 @@
 package gothickopselek;
 
+
 import gothickopselek.client.Messages;
 import gothickopselek.client.PlayerInputEvent;
 import gothickopselek.handlers.FogHandler;

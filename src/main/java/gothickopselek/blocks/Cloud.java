@@ -1,5 +1,6 @@
 package gothickopselek.blocks;
 
+import gothickopselek.blocks.TileEntity.TileEntityCloud;
 import gothickopselek.init.ModItems;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.material.Material;

@@ -35,9 +35,20 @@ public class FoodEffectBase extends FoodBase
 			{
 				player.addPotionEffect(new PotionEffect(Potion.getPotionById(9), 4600, 0));
 				
-			}else if(stack.getItem() == ModItems.beer)
+			}else if(stack.getItem() == ModItems.beer || stack.getItem() == ModItems.ryzowka)
 			{
 				player.addPotionEffect(new PotionEffect(Potion.getPotionById(15), 5000, 1));
+				player.addPotionEffect(new PotionEffect(Potion.getPotionById(2), 5000, 0));
+				
+			}else if(stack.getItem() == ModItems.wine || stack.getItem() == ModItems.gin)
+			{
+				player.addPotionEffect(new PotionEffect(Potion.getPotionById(15), 5000, 0));
+				player.addPotionEffect(new PotionEffect(Potion.getPotionById(5), 5000, 0));
+				player.addPotionEffect(new PotionEffect(Potion.getPotionById(2), 5000, 0));
+				
+			}else if(stack.getItem() == ModItems.wine2) 
+			{
+				player.addPotionEffect(new PotionEffect(Potion.getPotionById(5), 5000, 0));
 				player.addPotionEffect(new PotionEffect(Potion.getPotionById(2), 5000, 0));
 			}
 			
@@ -49,11 +60,8 @@ public class FoodEffectBase extends FoodBase
 		if(stack.getItem() == ModItems.Fag)
 		{
 			return EnumAction.EAT;
-		}else if(stack.getItem() == ModItems.beer)
-		{
-			return EnumAction.DRINK;
 		}
-		return EnumAction.EAT;
+		return EnumAction.DRINK;
 	}
 	
 	@SideOnly(Side.CLIENT)

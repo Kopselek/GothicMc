@@ -1,5 +1,8 @@
 package gothickopselek.server;
 
+
+import java.util.concurrent.ThreadLocalRandom;
+
 import gothickopselek.init.ModItems;
 import net.minecraft.block.BlockChest;
 import net.minecraft.block.state.IBlockState;
@@ -22,15 +25,24 @@ public class ModChest
 		{
 			if (!event.getEntityPlayer().capabilities.isCreativeMode)
 			{
-				if (heldItem.getItem() == ModItems.Picklock)
+				if (!event.getWorld().isRemote) 
 				{
-					
-				}else {
-					if (!event.getWorld().isRemote)
+					if (heldItem.getItem() == ModItems.Picklock)
 					{
+						int randomInt = ThreadLocalRandom.current().nextInt(0,10);
+						if(randomInt > 4)
+						{
+							event.getEntityPlayer().sendMessage(new TextComponentString(event.getEntityPlayer().getName() + ": Wytryk pêk³."));
+							
+							event.setCanceled(true);
+							int stack = heldItem.getCount();
+							event.getEntityPlayer().setHeldItem(event.getEntityPlayer().getActiveHand(), new ItemStack(ModItems.Picklock, stack - 1));
+						}
+						
+					}else {
+						event.setCanceled(true);
 						event.getEntityPlayer().sendMessage(new TextComponentString(event.getEntityPlayer().getName() + ": Czym?"));
 					}
-					event.setCanceled(true);
 				}
 			}
 		}

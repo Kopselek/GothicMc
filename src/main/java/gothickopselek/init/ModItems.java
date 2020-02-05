@@ -21,4 +21,9 @@ public class ModItems
 	public static final Item Coin_bronze = new ItemBase("coin_bronze");
 	
 	public static final Item Picklock = new ItemBase("picklock");
+	
+	public static final Item gin = new FoodEffectBase("gin", 0, 2.0F, false, new PotionEffect(ModPotion.beer_Effect, 4*(60 * 20), 0, false, true));
+	public static final Item ryzowka = new FoodEffectBase("ryzowka", 0, 2.0F, false, new PotionEffect(ModPotion.beer_Effect, 4*(60 * 20), 0, false, true));
+	public static final Item wine = new FoodEffectBase("wine", 0, 4.0F, false, new PotionEffect(ModPotion.beer_Effect, 4*(60 * 20), 0, false, true));
+	public static final Item wine2 = new FoodEffectBase("wine2", 0, 4.0F, false, new PotionEffect(ModPotion.beer_Effect, 4*(60 * 20), 0, false, true));
 }

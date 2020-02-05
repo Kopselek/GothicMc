@@ -4,7 +4,15 @@ item.picklock.name=Wytrych
 
 item.fag.name=Zew Nocy
 
-item.beer.name=Gin
+item.beer.name=Piwo
+
+item.gin.name=Gin
+
+item.ryzowka.name=Ryzowka
+
+item.wine.name=Wino
+
+item.wine2.name=Wykwintne wino
 
 item.coin_silver.name=Srebna moneta
 
@@ -18,18 +26,18 @@ effect.jazz=Upalony
 
 effect.beer=Nietrzezwy
 
-potion.effect.jazz=Pizga sznura
+potion.effect.jazz=Potion jazz
 
-splash_potion.effect.jazz=kiedy niunie pukam w
+splash_potion.effect.jazz=Splash potion jazz
 
-lingering_potion.effect.jazz=wannie, na mnie szata i krawacik
+lingering_potion.effect.jazz=Lingering potion jazz
 
-tipped_arrow.effect.jazz=suko to designer
+tipped_arrow.effect.jazz=Tipped arrow jazz
 
-potion.effect.beer=Sprint2DJ
+potion.effect.beer=Potion beer
 
-splash_potion.effect.beer=jest fajny ale
+splash_potion.effect.beer=Splash potion beer
 
-lingering_potion.effect.beer=ma bardzo duzego
+lingering_potion.effect.beer=Lingering potion beer
 
-tipped_arrow.effect.beer=krasnoludka moj kolego
+tipped_arrow.effect.beer=Tipped arrow beer

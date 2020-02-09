@@ -4,6 +4,7 @@ package gothickopselek;
 import gothickopselek.client.Messages;
 import gothickopselek.client.PlayerInputEvent;
 import gothickopselek.handlers.FogHandler;
+import gothickopselek.handlers.RenderHandler;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.client.settings.KeyBinding;
 import net.minecraft.item.Item;
@@ -21,6 +22,7 @@ public class ClientProxy extends CommonProxy
 	public void preInit(FMLPreInitializationEvent event)
 	{
 		super.preInit(event);
+		RenderHandler.registerEntityRenders();
 	}
 	
 	@Override

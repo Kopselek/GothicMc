@@ -1,7 +1,6 @@
 package gothickopselek;
 
 import gothickopselek.blocks.TileEntity.TileEntityCloud;
-import gothickopselek.handlers.RenderHandler;
 import gothickopselek.init.ModEntity;
 import gothickopselek.init.ModPotion;
 import gothickopselek.server.BW;
@@ -9,6 +8,8 @@ import gothickopselek.server.MessageServer;
 import gothickopselek.server.ModChest;
 import gothickopselek.server.NameFormat;
 import gothickopselek.server.commands.CommandImie;
+import gothickopselek.server.commands.CommandSprimie;
+import gothickopselek.server.commands.CommandZmienimie;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
@@ -26,7 +27,6 @@ public class CommonProxy
 		Main.proxy.registerTileEntities();
 		ModPotion.registerPotions();
 		ModEntity.registerEntities();
-		RenderHandler.registerEntityRenders();
 	}
 	@SuppressWarnings("deprecation")
 	public void registerTileEntities() {
@@ -48,6 +48,8 @@ public class CommonProxy
 	public void serverInit(FMLServerStartingEvent event) 
 	{
 		event.registerServerCommand(new CommandImie());
+		event.registerServerCommand(new CommandSprimie());
+		event.registerServerCommand(new CommandZmienimie());
 	}
 	
 	public void registerItemRender(Item item, int meta, String id) {}

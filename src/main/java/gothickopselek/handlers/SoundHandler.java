@@ -18,7 +18,16 @@ public class SoundHandler
 	public static SoundEvent shantie;
 	public static SoundEvent shantie2;
 	
-	private static int size = 8;
+	public static SoundEvent kretoszczur_ambient;
+	public static SoundEvent kretoszczur_death;
+	public static SoundEvent kretoszczur_hurt;
+	
+	public static SoundEvent scierwojad_ambient;
+	public static SoundEvent scierwojad_death;
+	public static SoundEvent scierwojad_hurt;
+	public static SoundEvent scierwojad_attack;
+	
+	private static int size = 15;
 	
 	public static void init()
 	{
@@ -35,6 +44,14 @@ public class SoundHandler
 		shantie = register("shantie");
 		shantie2 = register("shantie2");
 		
+		kretoszczur_ambient = register("kretoszczur_ambient");
+		kretoszczur_death = register("kretoszczur_death");
+		kretoszczur_hurt = register("kretoszczur_hurt");
+		
+		scierwojad_ambient = register("scierwojad_ambient");
+		scierwojad_death = register("scierwojad_death");
+		scierwojad_hurt = register("scierwojad_hurt");
+		scierwojad_attack = register("scierwojad_attack");
 		
 	}
 	

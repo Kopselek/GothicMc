@@ -6,9 +6,10 @@ import net.minecraft.command.ICommandSender;
 import net.minecraft.command.WrongUsageException;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.network.play.server.SPacketPlayerListItem;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.text.TextComponentTranslation;
+import net.minecraft.util.text.TextComponentString;
 
 import java.util.Arrays;
 import gothickopselek.Reference;
@@ -61,13 +62,14 @@ public class CommandImie extends CommandBase
 					{
 						p.setCustomNameTag(imieArgFix);
 						p.refreshDisplayName();
-							
-			            EntityPlayerMP entityplayermp = server.getPlayerList().getPlayerByUsername(p.getName());
-			                
-			            if (entityplayermp != null)
-			            {
-			                entityplayermp.connection.disconnect(new TextComponentTranslation("Twoje imie zostalo zmienione, wejdz ponownie na serwer!", new Object[0]));
-			            }
+						
+				    	SPacketPlayerListItem item = new SPacketPlayerListItem(SPacketPlayerListItem.Action.UPDATE_DISPLAY_NAME,p.getServer().getPlayerList().getPlayers());
+				    	for(EntityPlayerMP p1 : p.getServer().getPlayerList().getPlayers())
+				    	{
+				    		p1.connection.sendPacket(item);
+				    	}
+						
+				    	p.sendMessage(new TextComponentString("Twoje imie zostalo zmienione na: " + imieArgFix));
 					}else
 					{
 						throw new WrongUsageException("Maksymalna dlugosc to 16 znakow!", new Object[0]);

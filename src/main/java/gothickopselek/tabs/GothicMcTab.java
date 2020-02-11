@@ -12,6 +12,6 @@ public class GothicMcTab extends CreativeTabs
 	this.setBackgroundImageName("drstonetab.png"); 
 	}
 	public ItemStack getTabIconItem() {
-		return new ItemStack(Items.IRON_SWORD);
+		return new ItemStack(Items.BOOK);
 	}
 }

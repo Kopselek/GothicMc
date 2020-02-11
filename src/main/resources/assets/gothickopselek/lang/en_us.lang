@@ -1,6 +1,10 @@
 entity.Kretoszczur.name=Kretoszczur
 
-itemGroup.GothicMcTab=GothicMcTab
+entity.Scierwojad.name=Scierwojad
+
+itemGroup.GothicMcTab=Gothic Itemy
+
+itemGroup.GothicMcTabWeapones=Gothic bronie
 
 item.picklock.name=Wytrych
 
@@ -20,7 +24,7 @@ item.coin_silver.name=Srebna moneta
 
 item.coin_gold.name=Zlota moneta
 
-item.coin_bronze.name=Br¹zowa moneta
+item.coin_bronze.name=Miedziana moneta
 
 tile.cloud.name=Chmura
 

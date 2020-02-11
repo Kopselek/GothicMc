@@ -52,5 +52,48 @@
         "sounds": ["gothickopselek:shantie2"], 
         "subtitle": "gothickopselek.subtitle.shantie2" ,
         "stream": "true"
-    }      
+    },
+"kretoszczur_hurt": { 
+        "category": "master", 
+        "sounds": ["gothickopselek:kretoszczur_hurt"], 
+        "subtitle": "gothickopselek.subtitle.kretoszczur_hurt" ,
+        "stream": "true"
+    },
+"kretoszczur_death": { 
+        "category": "master", 
+        "sounds": ["gothickopselek:kretoszczur_death"], 
+        "subtitle": "gothickopselek.subtitle.kretoszczur_death" ,
+        "stream": "true"
+    },
+"kretoszczur_ambient": { 
+        "category": "master", 
+        "sounds": ["gothickopselek:kretoszczur_ambient"], 
+        "subtitle": "gothickopselek.subtitle.kretoszczur_ambient" ,
+        "stream": "false"
+    },
+"scierwojad_hurt": { 
+        "category": "master", 
+        "sounds": ["gothickopselek:scierwojad_hurt"], 
+        "subtitle": "gothickopselek.subtitle.scierwojad_hurt" ,
+        "stream": "true"
+    },
+"scierwojad_death": { 
+        "category": "master", 
+        "sounds": ["gothickopselek:scierwojad_death"], 
+        "subtitle": "gothickopselek.subtitle.scierwojad_death" ,
+        "stream": "true"
+    },
+"scierwojad_ambient": { 
+        "category": "master", 
+        "sounds": ["gothickopselek:scierwojad_ambient"], 
+        "subtitle": "gothickopselek.subtitle.scierwojad_ambient" ,
+        "stream": "false"
+    },
+"scierwojad_attack": { 
+        "category": "master", 
+        "sounds": ["gothickopselek:scierwojad_attack"], 
+        "subtitle": "gothickopselek.subtitle.scierwojad_attack" ,
+        "stream": "false"
+    }
+    
 }

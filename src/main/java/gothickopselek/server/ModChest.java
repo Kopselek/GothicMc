@@ -32,7 +32,7 @@ public class ModChest
 						int randomInt = ThreadLocalRandom.current().nextInt(0,10);
 						if(randomInt > 4)
 						{
-							event.getEntityPlayer().sendMessage(new TextComponentString(event.getEntityPlayer().getName() + ": Wytryk pêk³."));
+							event.getEntityPlayer().sendMessage(new TextComponentString(event.getEntityPlayer().getName() + ": Wytrych zlamal sie."));
 							
 							event.setCanceled(true);
 							int stack = heldItem.getCount();

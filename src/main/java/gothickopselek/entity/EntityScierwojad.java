@@ -14,17 +14,17 @@ import net.minecraft.util.SoundEvent;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class EntityKretoszczur extends EntityPig
+public class EntityScierwojad extends EntityPig
 {
-	public EntityKretoszczur(World worldIn) {
+	public EntityScierwojad(World worldIn) {
 		super(worldIn);
-		this.setSize(0.8F, 0.8F);
+		this.setSize(0.8F, 1.6F);
 	}
 	
 	protected void applyEntityAttributes() {
         super.applyEntityAttributes();
         this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(10.0D);
-        this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.3D);
+        this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.4D);
         return;
 	}
 	
@@ -66,5 +66,4 @@ public class EntityKretoszczur extends EntityPig
     {
     	return true;
     }
-	
 }

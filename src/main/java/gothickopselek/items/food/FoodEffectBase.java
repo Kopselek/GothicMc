@@ -33,23 +33,23 @@ public class FoodEffectBase extends FoodBase
 			player.addPotionEffect(new PotionEffect(effect.getPotion(), effect.getDuration(), effect.getAmplifier(), effect.getIsAmbient(), effect.doesShowParticles()));
 			if(stack.getItem() == ModItems.Fag)
 			{
-				player.addPotionEffect(new PotionEffect(Potion.getPotionById(9), 4600, 0));
+				player.addPotionEffect(new PotionEffect(Potion.getPotionById(9), 1000, 0));
 				
 			}else if(stack.getItem() == ModItems.beer || stack.getItem() == ModItems.ryzowka)
 			{
-				player.addPotionEffect(new PotionEffect(Potion.getPotionById(15), 5000, 1));
-				player.addPotionEffect(new PotionEffect(Potion.getPotionById(2), 5000, 0));
+				player.addPotionEffect(new PotionEffect(Potion.getPotionById(15), 1000, 1));
+				player.addPotionEffect(new PotionEffect(Potion.getPotionById(2), 1000, 0));
 				
 			}else if(stack.getItem() == ModItems.wine || stack.getItem() == ModItems.gin)
 			{
-				player.addPotionEffect(new PotionEffect(Potion.getPotionById(15), 5000, 0));
-				player.addPotionEffect(new PotionEffect(Potion.getPotionById(5), 5000, 0));
-				player.addPotionEffect(new PotionEffect(Potion.getPotionById(2), 5000, 0));
+				player.addPotionEffect(new PotionEffect(Potion.getPotionById(15), 1000, 0));
+				player.addPotionEffect(new PotionEffect(Potion.getPotionById(5), 1000, 0));
+				player.addPotionEffect(new PotionEffect(Potion.getPotionById(2), 1000, 0));
 				
 			}else if(stack.getItem() == ModItems.wine2) 
 			{
-				player.addPotionEffect(new PotionEffect(Potion.getPotionById(5), 5000, 0));
-				player.addPotionEffect(new PotionEffect(Potion.getPotionById(2), 5000, 0));
+				player.addPotionEffect(new PotionEffect(Potion.getPotionById(5), 1000, 0));
+				player.addPotionEffect(new PotionEffect(Potion.getPotionById(2), 1000, 0));
 			}
 			
 		}
@@ -67,7 +67,7 @@ public class FoodEffectBase extends FoodBase
 	@SideOnly(Side.CLIENT)
 	public boolean hasEffect(ItemStack stack)
 	{
-		return true;
+		return false;
 	}
 	
 }

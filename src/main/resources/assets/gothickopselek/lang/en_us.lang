@@ -1,6 +1,26 @@
+entity.Flower1.name=Niebieski Bez
+
+entity.Flower2.name=Ognista Pokrzywa
+
+entity.Flower3.name=Piekielnik
+
+entity.Flower4.name=Roslina Lecznicza
+
+entity.Flower5.name=Rzepa
+
+entity.Flower6.name=Smoczy Korzen
+
+entity.Flower7.name=Ziele Lecznicze
+
 entity.Kretoszczur.name=Kretoszczur
 
 entity.Scierwojad.name=Scierwojad
+
+entity.Cieniostwor.name=Cieniostwor
+
+entity.Topielec.name=Topielec
+
+entity.Zebacz.name=Zebacz
 
 itemGroup.GothicMcTab=Gothic Itemy
 

@@ -14,21 +14,19 @@ import net.minecraft.util.SoundEvent;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class EntityScierwojad extends EntityPig
+public class EntityCieniostwor extends EntityPig
 {
-	public EntityScierwojad(World worldIn) {
+	public EntityCieniostwor(World worldIn) {
 		super(worldIn);
-		this.setSize(4.0F, 8.0F);
+		this.setSize(5.0F, 4.4F);
 	}
-	
 	
 	protected void applyEntityAttributes() {
         super.applyEntityAttributes();
         this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(10.0D);
-        this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.4D);
+        this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.35D);
         return;
 	}
-	
 	
     protected SoundEvent getAmbientSound()
     {

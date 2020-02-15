@@ -57,13 +57,13 @@
         "category": "master", 
         "sounds": ["gothickopselek:kretoszczur_hurt"], 
         "subtitle": "gothickopselek.subtitle.kretoszczur_hurt" ,
-        "stream": "true"
+        "stream": "false"
     },
 "kretoszczur_death": { 
         "category": "master", 
         "sounds": ["gothickopselek:kretoszczur_death"], 
         "subtitle": "gothickopselek.subtitle.kretoszczur_death" ,
-        "stream": "true"
+        "stream": "false"
     },
 "kretoszczur_ambient": { 
         "category": "master", 
@@ -71,17 +71,23 @@
         "subtitle": "gothickopselek.subtitle.kretoszczur_ambient" ,
         "stream": "false"
     },
+"kretoszczur_attack": { 
+        "category": "master", 
+        "sounds": ["gothickopselek:kretoszczur_attack"], 
+        "subtitle": "gothickopselek.subtitle.kretoszczur_attack" ,
+        "stream": "false"
+    },
 "scierwojad_hurt": { 
         "category": "master", 
         "sounds": ["gothickopselek:scierwojad_hurt"], 
         "subtitle": "gothickopselek.subtitle.scierwojad_hurt" ,
-        "stream": "true"
+        "stream": "false"
     },
 "scierwojad_death": { 
         "category": "master", 
         "sounds": ["gothickopselek:scierwojad_death"], 
         "subtitle": "gothickopselek.subtitle.scierwojad_death" ,
-        "stream": "true"
+        "stream": "false"
     },
 "scierwojad_ambient": { 
         "category": "master", 
@@ -93,6 +99,78 @@
         "category": "master", 
         "sounds": ["gothickopselek:scierwojad_attack"], 
         "subtitle": "gothickopselek.subtitle.scierwojad_attack" ,
+        "stream": "false"
+    },
+"cieniostwor_hurt": { 
+        "category": "master", 
+        "sounds": ["gothickopselek:cieniostwor_hurt"], 
+        "subtitle": "gothickopselek.subtitle.cieniostwor_hurt" ,
+        "stream": "false"
+    },
+"cieniostwor_death": { 
+        "category": "master", 
+        "sounds": ["gothickopselek:cieniostwor_death"], 
+        "subtitle": "gothickopselek.subtitle.cieniostwor_death" ,
+        "stream": "false"
+    },
+"cieniostwor_ambient": { 
+        "category": "master", 
+        "sounds": ["gothickopselek:cieniostwor_ambient"], 
+        "subtitle": "gothickopselek.subtitle.cieniostwor_ambient" ,
+        "stream": "false"
+    },
+"cieniostwor_attack": { 
+        "category": "master", 
+        "sounds": ["gothickopselek:cieniostwor_attack"], 
+        "subtitle": "gothickopselek.subtitle.cieniostwor_attack" ,
+        "stream": "false"
+    },
+"topielec_hurt": { 
+        "category": "master", 
+        "sounds": ["gothickopselek:topielec_hurt"], 
+        "subtitle": "gothickopselek.subtitle.topielec_hurt" ,
+        "stream": "false"
+    },
+"topielec_death": { 
+        "category": "master", 
+        "sounds": ["gothickopselek:topielec_death"], 
+        "subtitle": "gothickopselek.subtitle.topielec_death" ,
+        "stream": "false"
+    },
+"topielec_ambient": { 
+        "category": "master", 
+        "sounds": ["gothickopselek:topielec_ambient"], 
+        "subtitle": "gothickopselek.subtitle.topielec_ambient" ,
+        "stream": "false"
+    },
+"topielec_attack": { 
+        "category": "master", 
+        "sounds": ["gothickopselek:topielec_attack"], 
+        "subtitle": "gothickopselek.subtitle.topielec_attack" ,
+        "stream": "false"
+    },
+"zebacz_hurt": { 
+        "category": "master", 
+        "sounds": ["gothickopselek:zebacz_hurt"], 
+        "subtitle": "gothickopselek.subtitle.zebacz_hurt" ,
+        "stream": "false"
+    },
+"zebacz_death": { 
+        "category": "master", 
+        "sounds": ["gothickopselek:zebacz_death"], 
+        "subtitle": "gothickopselek.subtitle.zebacz_death" ,
+        "stream": "false"
+    },
+"zebacz_ambient": { 
+        "category": "master", 
+        "sounds": ["gothickopselek:zebacz_ambient"], 
+        "subtitle": "gothickopselek.subtitle.zebacz_ambient" ,
+        "stream": "false"
+    },
+"zebacz_attack": { 
+        "category": "master", 
+        "sounds": ["gothickopselek:zebacz_attack"], 
+        "subtitle": "gothickopselek.subtitle.zebacz_attack" ,
         "stream": "false"
     }
     

@@ -1,34 +1,33 @@
 package gothickopselek.entity;
 
-import net.minecraft.block.Block;
 import net.minecraft.entity.EntityAgeable;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.passive.EntityPig;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.SoundEvents;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class EntityScierwojad extends EntityPig
+public class EntityFlower4  extends EntityPig
 {
-	public EntityScierwojad(World worldIn) {
+	public EntityFlower4(World worldIn) {
 		super(worldIn);
-		this.setSize(4.0F, 8.0F);
+		this.setSize(1.8F, 0.6F);
 	}
-	
 	
 	protected void applyEntityAttributes() {
         super.applyEntityAttributes();
-        this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(10.0D);
-        this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.4D);
+        this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(1.0D);
+        this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.0D);
+        this.getEntityAttribute(SharedMonsterAttributes.KNOCKBACK_RESISTANCE).setBaseValue(10);
         return;
 	}
-	
+	protected void initEntityAI() {
+		return;
+	}
 	
     protected SoundEvent getAmbientSound()
     {
@@ -59,13 +58,10 @@ public class EntityScierwojad extends EntityPig
     	return null;
     }
     
-    protected void playStepSound(BlockPos pos, Block blockIn)
-    {
-        this.playSound(SoundEvents.ENTITY_PIG_STEP, 0.15F, 1.0F);
-    }
     @Override
     public boolean processInteract(EntityPlayer player, EnumHand hand) 
     {
-    	return true;
+    	return false;
     }
+	
 }

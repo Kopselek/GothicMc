@@ -18,7 +18,7 @@ public class EntityKretoszczur extends EntityPig
 {
 	public EntityKretoszczur(World worldIn) {
 		super(worldIn);
-		this.setSize(0.8F, 0.8F);
+		this.setSize(2.8F, 2.4F);
 	}
 	
 	protected void applyEntityAttributes() {

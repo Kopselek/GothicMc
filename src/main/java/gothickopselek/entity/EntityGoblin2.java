@@ -11,11 +11,11 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class EntityCieniostwor extends EntityPig
+public class EntityGoblin2 extends EntityPig
 {
-	public EntityCieniostwor(World worldIn) {
+	public EntityGoblin2(World worldIn) {
 		super(worldIn);
-		this.setSize(5.0F, 4.4F);
+		this.setSize(4.0F, 2.0F);
 	}
 	
 	protected void applyEntityAttributes() {

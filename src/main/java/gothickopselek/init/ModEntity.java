@@ -4,12 +4,19 @@ import gothickopselek.Main;
 import gothickopselek.Reference;
 import gothickopselek.entity.EntityCieniostwor;
 import gothickopselek.entity.EntityFlower1;
+import gothickopselek.entity.EntityFlower10;
+import gothickopselek.entity.EntityFlower11;
+import gothickopselek.entity.EntityFlower12;
 import gothickopselek.entity.EntityFlower2;
 import gothickopselek.entity.EntityFlower3;
 import gothickopselek.entity.EntityFlower4;
 import gothickopselek.entity.EntityFlower5;
 import gothickopselek.entity.EntityFlower6;
 import gothickopselek.entity.EntityFlower7;
+import gothickopselek.entity.EntityFlower8;
+import gothickopselek.entity.EntityFlower9;
+import gothickopselek.entity.EntityGoblin;
+import gothickopselek.entity.EntityGoblin2;
 import gothickopselek.entity.EntityKretoszczur;
 import gothickopselek.entity.EntityScierwojad;
 import gothickopselek.entity.EntityTopielec;
@@ -35,6 +42,14 @@ public class ModEntity
 		registerEntity("Flower5", EntityFlower5.class, Reference.ENTITY_FLOWER5, 50, 000000, 000000);
 		registerEntity("Flower6", EntityFlower6.class, Reference.ENTITY_FLOWER6, 50, 000000, 000000);
 		registerEntity("Flower7", EntityFlower7.class, Reference.ENTITY_FLOWER7, 50, 000000, 000000);
+		registerEntity("Flower8", EntityFlower8.class, Reference.ENTITY_FLOWER8, 50, 000000, 000000);
+		registerEntity("Flower9", EntityFlower9.class, Reference.ENTITY_FLOWER9, 50, 000000, 000000);
+		registerEntity("Flower10", EntityFlower10.class, Reference.ENTITY_FLOWER10, 50, 000000, 000000);
+		registerEntity("Flower11", EntityFlower11.class, Reference.ENTITY_FLOWER11, 50, 000000, 000000);
+		registerEntity("Flower12", EntityFlower12.class, Reference.ENTITY_FLOWER12, 50, 000000, 000000);
+		
+		registerEntity("Goblin", EntityGoblin.class, Reference.ENTITY_GOBLIN, 50, 23423477, 10012956);
+		registerEntity("Goblin2", EntityGoblin2.class, Reference.ENTITY_GOBLIN2, 50, 23423477, 10012956);
 	}
 	private static void registerEntity(String name, Class<? extends Entity> entity, int id, int range, int color1, int color2)
 	{

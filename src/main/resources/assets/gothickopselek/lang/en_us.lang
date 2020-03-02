@@ -12,6 +12,20 @@ entity.Flower6.name=Smoczy Korzen
 
 entity.Flower7.name=Ziele Lecznicze
 
+entity.Flower8.name=Alkojagoda
+
+entity.Flower9.name=Goblinskie Jagody
+
+entity.Flower10.name=Ziolo Many
+
+entity.Flower11.name=Orkowe Ziele
+
+entity.Flower12.name=Szczaw Krolewski
+
+entity.Goblin.name=Goblin
+
+entity.Goblin2.name=Czarny Goblin
+
 entity.Kretoszczur.name=Kretoszczur
 
 entity.Scierwojad.name=Scierwojad
@@ -25,6 +39,12 @@ entity.Zebacz.name=Zebacz
 itemGroup.GothicMcTab=Gothic Itemy
 
 itemGroup.GothicMcTabWeapones=Gothic bronie
+
+item.mask.name=Maska
+
+item.dice.name=Kosci do gry
+
+item.lute.name=Lutnia
 
 item.picklock.name=Wytrych
 

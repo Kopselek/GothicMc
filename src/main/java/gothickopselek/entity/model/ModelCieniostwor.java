@@ -154,7 +154,7 @@ public class ModelCieniostwor extends ModelBase {
     @Override
     public void setRotationAngles(float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch, float scaleFactor, Entity entityIn) 
     {
-    	this.gowa.rotateAngleX = MathHelper.cos(limbSwing * 0.2220F) * 0.2F * limbSwingAmount;
+    	this.gowa.rotateAngleX = (MathHelper.cos(limbSwing * 0.2220F) * 0.2F * limbSwingAmount) * -1;
     	this.Noga1.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F) * 0.6F * limbSwingAmount;
     	this.Noga4.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F + (float)Math.PI) * 0.6F * limbSwingAmount;
     	this.Noga3.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F + (float)Math.PI) * 0.6F * limbSwingAmount;

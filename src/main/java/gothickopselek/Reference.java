@@ -4,7 +4,7 @@ public class Reference
 {
 	public static final String modID = "gothickopselek";
 	public static final String modName = "GothicMC";
-	public static final String modVersion = "1.2.3";
+	public static final String modVersion = "1.2.6";
 	public static final String modMcVersion = "[1.12.2]";
 	
 	public static final String modClientProxy = "gothickopselek.ClientProxy";
@@ -23,4 +23,12 @@ public class Reference
 	public static final int ENTITY_FLOWER5 = 129;
 	public static final int ENTITY_FLOWER6 = 130;
 	public static final int ENTITY_FLOWER7 = 131;
+	public static final int ENTITY_FLOWER8 = 132;
+	public static final int ENTITY_FLOWER9 = 133;
+	public static final int ENTITY_FLOWER10 = 134;
+	public static final int ENTITY_FLOWER11 = 135;
+	public static final int ENTITY_FLOWER12 = 136;
+	
+	public static final int ENTITY_GOBLIN = 137;
+	public static final int ENTITY_GOBLIN2 = 138;
 }

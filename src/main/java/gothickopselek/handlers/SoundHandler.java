@@ -43,7 +43,12 @@ public class SoundHandler
 	public static SoundEvent zebacz_hurt;
 	public static SoundEvent zebacz_attack;
 	
-	private static int size = 28;
+	public static SoundEvent goblin_ambient;
+	public static SoundEvent goblin_death;
+	public static SoundEvent goblin_hurt;
+	public static SoundEvent goblin_attack;
+	
+	private static int size = 32;
 	
 	public static void init()
 	{
@@ -84,6 +89,11 @@ public class SoundHandler
 		zebacz_death = register("zebacz_death");
 		zebacz_hurt = register("zebacz_hurt");
 		zebacz_attack = register("zebacz_attack");
+		
+		goblin_ambient = register("goblin_ambient");
+		goblin_death = register("goblin_death");
+		goblin_hurt = register("goblin_hurt");
+		goblin_attack = register("goblin_attack");
 		
 	}
 	

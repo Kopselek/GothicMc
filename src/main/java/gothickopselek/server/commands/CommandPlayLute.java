@@ -49,7 +49,7 @@ public class CommandPlayLute extends CommandBase
 					if(p.getHeldItemOffhand().getItem() == ModItems.lute)
 					{
 						BlockPos pPos = p.getPosition();
-						p.getServer().getEntityWorld().playSound(null, pPos.getX(), pPos.getY(), pPos.getZ(), SoundEvents.BLOCK_NOTE_GUITAR, SoundCategory.BLOCKS, 20.0F, 0.0F + (Float.parseFloat(args[0]) / 5));
+						p.getServer().getEntityWorld().playSound(null, pPos.getX(), pPos.getY(), pPos.getZ(), SoundEvents.BLOCK_NOTE_GUITAR, SoundCategory.AMBIENT, 1.0F, 0.0F + (Float.parseFloat(args[0]) / 5));
 					}
 				}
 			}

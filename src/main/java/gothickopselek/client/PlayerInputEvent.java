@@ -15,11 +15,13 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 @SideOnly(Side.CLIENT)
 public class PlayerInputEvent
 {
+	
 	@SideOnly(Side.CLIENT)
 	@SubscribeEvent
 	public void playerInput(InputEvent.KeyInputEvent event)
 	{
 		EntityPlayer p = Minecraft.getMinecraft().player;
+		
 		if (p.isPotionActive(ModPotion.beer_Effect))
 		{
 		    if(Keyboard.isKeyDown(Keyboard.KEY_S)) // down

@@ -38,7 +38,8 @@ public class MessageServer
 		if(event.getPlayer() != null)
 		{
 			event.setCanceled(true);
-			if(mess.length() > 1)
+			
+			if(mess.length() >= 1)
 			{
 				if(p.isPotionActive(ModPotion.beer_Effect)) //change player's message when beer_effect is active
 				{
@@ -83,7 +84,6 @@ public class MessageServer
 					}
 				}
 			}
-			
 			double minX = p.posX - 15.0;
 			double minY = p.posY - 15.0;
 			double minZ = p.posZ - 15.0;

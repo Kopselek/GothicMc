@@ -4,11 +4,11 @@ import gothickopselek.IHasModel;
 import gothickopselek.Main;
 import gothickopselek.init.ModItems;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
-import net.minecraft.network.play.server.SPacketPlayerListItem;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 
 public class ArmorBase extends ItemArmor implements IHasModel
@@ -33,24 +33,10 @@ public class ArmorBase extends ItemArmor implements IHasModel
 	@Override
 	public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack) 
 	{
-		if(!world.isRemote)
+		if(player.inventory.armorItemInSlot(3).getItem() == ModItems.line_bag)
 		{
-			if(itemStack.getItem() == ModItems.Mask && player.getCustomNameTag() != "")
-			{
-				//save player's name tag to save it in data
-				String savedTag = player.getCustomNameTag();
-				
-				player.setCustomNameTag("Zamaskowany");
-				player.refreshDisplayName();
-				
-		    	SPacketPlayerListItem item = new SPacketPlayerListItem(SPacketPlayerListItem.Action.UPDATE_DISPLAY_NAME,player.getServer().getPlayerList().getPlayers());
-		    	for(EntityPlayerMP p1 : player.getServer().getPlayerList().getPlayers())
-		    	{
-		    		p1.connection.sendPacket(item);
-		    	}
-		    	
-		    	player.setCustomNameTag(savedTag);
-			}
+			player.addPotionEffect(new PotionEffect(Potion.getPotionById(2), 0, 257));
+			player.closeScreen();
 		}
 	}
 }

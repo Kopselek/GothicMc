@@ -38,7 +38,9 @@ entity.Zebacz.name=Zebacz
 
 itemGroup.GothicMcTab=Gothic Itemy
 
-itemGroup.GothicMcTabWeapones=Gothic bronie
+item.line_bag.name=Lina i Worek
+
+item.bandagger.name=Sztylet Bana
 
 item.mask.name=Maska
 

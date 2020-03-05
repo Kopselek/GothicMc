@@ -4,7 +4,7 @@ public class Reference
 {
 	public static final String modID = "gothickopselek";
 	public static final String modName = "GothicMC";
-	public static final String modVersion = "1.2.6";
+	public static final String modVersion = "1.2.9";
 	public static final String modMcVersion = "[1.12.2]";
 	
 	public static final String modClientProxy = "gothickopselek.ClientProxy";

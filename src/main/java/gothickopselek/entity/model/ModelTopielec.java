@@ -64,7 +64,7 @@ public class ModelTopielec extends ModelBase {
         this.Noga3 = new ModelRenderer(this, 12, 140);
         this.Noga3.setRotationPoint(-10.0F, 8.2F, 48.2F);
         this.Noga3.addBox(0.0F, 0.0F, 0.0F, 10, 10, 32, 0.0F);
-        this.setRotateAngle(Noga3, -1.4114477660878142F, 0.0F, 0.0F);
+        this.setRotateAngle(Noga3, -0.4114477660878142F, 0.0F, 0.0F);
         this.palec3 = new ModelRenderer(this, 260, 155);
         this.palec3.setRotationPoint(1.9F, 8.6F, -14.5F);
         this.palec3.addBox(0.0F, 0.0F, 0.0F, 4, 4, 20, 0.0F);
@@ -110,7 +110,7 @@ public class ModelTopielec extends ModelBase {
         this.Noga4 = new ModelRenderer(this, 12, 140);
         this.Noga4.setRotationPoint(27.7F, 8.2F, 48.2F);
         this.Noga4.addBox(0.0F, 0.0F, 0.0F, 10, 10, 32, 0.0F);
-        this.setRotateAngle(Noga4, -1.4114477660878142F, 0.0F, 0.0F);
+        this.setRotateAngle(Noga4, -0.4114477660878142F, 0.0F, 0.0F);
         this.palec3_2 = new ModelRenderer(this, 260, 155);
         this.palec3_2.setRotationPoint(9.7F, 8.5F, -13.9F);
         this.palec3_2.addBox(0.0F, 0.0F, 0.0F, 4, 4, 20, 0.0F);
@@ -141,7 +141,7 @@ public class ModelTopielec extends ModelBase {
         this.Noga1 = new ModelRenderer(this, 12, 92);
         this.Noga1.setRotationPoint(-4.5F, -2.9F, -1.7F);
         this.Noga1.addBox(0.0F, 0.0F, 0.0F, 8, 8, 30, 0.0F);
-        this.setRotateAngle(Noga1, -0.22759093446006054F, 0.0F, 0.0F);
+        this.setRotateAngle(Noga1, 1.0F, 0.0F, 0.0F);
         this.tlow = new ModelRenderer(this, 0, 0);
         this.tlow.setRotationPoint(-13.7F, -28.8F, -25.9F);
         this.tlow.addBox(0.0F, 0.0F, 0.0F, 28, 22, 54, 0.0F);

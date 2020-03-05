@@ -9,6 +9,8 @@ import gothickopselek.init.ModItems;
 import net.minecraft.block.BlockChest;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Items;
+import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
@@ -20,6 +22,31 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class RightClickEventCustom 
 {
+	@SubscribeEvent
+	public void onPlayerClick(PlayerInteractEvent.EntityInteract event)
+	{
+		if(!event.getWorld().isRemote)
+		{
+			if (event.getTarget() instanceof EntityPlayer)
+			{
+				EntityPlayer p = event.getEntityPlayer();
+				EntityPlayer t = (EntityPlayer) event.getTarget();
+				
+				if (t.inventory.armorItemInSlot(3).getItem() == ModItems.line_bag)
+				{
+					if (p.isSneaking())
+					{
+						t.setItemStackToSlot(EntityEquipmentSlot.HEAD, new ItemStack(Items.AIR));
+						
+					}else {
+						
+						t.attemptTeleport(p.getPosition().getX(), p.getPosition().getY(), p.getPosition().getZ());
+					}
+				}
+			}
+		}
+	}
+	
 	@SubscribeEvent
 	public void onClickChest(PlayerInteractEvent.RightClickBlock event)
 	{

@@ -18,12 +18,13 @@ import net.minecraft.util.text.TextComponentString;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
+import net.minecraftforge.event.entity.player.PlayerInteractEvent.EntityInteract;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class RightClickEventCustom 
 {
 	@SubscribeEvent
-	public void onPlayerClick(PlayerInteractEvent.EntityInteract event)
+	public void onPlayerClick(EntityInteract event)
 	{
 		if(!event.getWorld().isRemote)
 		{

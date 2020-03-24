@@ -172,6 +172,56 @@
         "sounds": ["gothickopselek:zebacz_attack"], 
         "subtitle": "gothickopselek.subtitle.zebacz_attack" ,
         "stream": "false"
+    },
+"wilk_hurt": { 
+        "category": "master", 
+        "sounds": ["gothickopselek:wilk_hurt"], 
+        "subtitle": "gothickopselek.subtitle.wilk_hurt" ,
+        "stream": "false"
+    },
+"wilk_death": { 
+        "category": "master", 
+        "sounds": ["gothickopselek:zebacz_death"], 
+        "subtitle": "gothickopselek.subtitle.zebacz_death" ,
+        "stream": "false"
+    },
+"wilk_ambient": { 
+        "category": "master", 
+        "sounds": ["gothickopselek:wilk_ambient"], 
+        "subtitle": "gothickopselek.subtitle.wilk_ambient" ,
+        "stream": "false"
+    },
+"wilk_attack": { 
+        "category": "master", 
+        "sounds": ["gothickopselek:wilk_attack"], 
+        "subtitle": "gothickopselek.subtitle.wilk_attack" ,
+        "stream": "false"
+    },
+"PolnaBestia_hurt": { 
+        "category": "master", 
+        "sounds": ["gothickopselek:PolnaBestia_hurt"], 
+        "subtitle": "gothickopselek.subtitle.PolnaBestia_hurt" ,
+        "stream": "false"
+    },
+"PolnaBestia_death": { 
+        "category": "master", 
+        "sounds": ["gothickopselek:PolnaBestia_death"], 
+        "subtitle": "gothickopselek.subtitle.PolnaBestia_death" ,
+        "stream": "false"
+    },
+"PolnaBestia_ambient": { 
+        "category": "master", 
+        "sounds": ["gothickopselek:PolnaBestia_ambient"], 
+        "subtitle": "gothickopselek.subtitle.PolnaBestia_ambient" ,
+        "stream": "false"
+    },
+"PolnaBestia_attack": { 
+        "category": "master", 
+        "sounds": ["gothickopselek:PolnaBestia_attack"], 
+        "subtitle": "gothickopselek.subtitle.PolnaBestia_attack" ,
+        "stream": "false"
     }
+    
+    
     
 }

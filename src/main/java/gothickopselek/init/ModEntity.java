@@ -18,8 +18,10 @@ import gothickopselek.entity.EntityFlower9;
 import gothickopselek.entity.EntityGoblin;
 import gothickopselek.entity.EntityGoblin2;
 import gothickopselek.entity.EntityKretoszczur;
+import gothickopselek.entity.EntityPolnaBestia;
 import gothickopselek.entity.EntityScierwojad;
 import gothickopselek.entity.EntityTopielec;
+import gothickopselek.entity.EntityWilk;
 import gothickopselek.entity.EntityZebacz;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.ResourceLocation;
@@ -49,7 +51,10 @@ public class ModEntity
 		registerEntity("Flower12", EntityFlower12.class, Reference.ENTITY_FLOWER12, 50, 000000, 000000);
 		
 		registerEntity("Goblin", EntityGoblin.class, Reference.ENTITY_GOBLIN, 50, 23423477, 10012956);
-		registerEntity("Goblin2", EntityGoblin2.class, Reference.ENTITY_GOBLIN2, 50, 23423477, 10012956);
+		registerEntity("Goblin2", EntityGoblin2.class, Reference.ENTITY_GOBLIN2, 50, 23423477, 100352956);
+		
+		registerEntity("Wilk", EntityWilk.class, Reference.ENTITY_WILK, 50, 23454477, 10012956);
+		registerEntity("PolnaBestia", EntityPolnaBestia.class, Reference.ENTITY_POLNABESTIA, 50, 23426577, 120553956);
 	}
 	private static void registerEntity(String name, Class<? extends Entity> entity, int id, int range, int color1, int color2)
 	{

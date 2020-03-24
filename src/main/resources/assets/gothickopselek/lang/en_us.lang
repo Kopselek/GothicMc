@@ -22,6 +22,10 @@ entity.Flower11.name=Orkowe Ziele
 
 entity.Flower12.name=Szczaw Krolewski
 
+entity.Wilk.name=Wilk
+
+entity.PolnaBestia.name=Polna Bestia
+
 entity.Goblin.name=Goblin
 
 entity.Goblin2.name=Czarny Goblin

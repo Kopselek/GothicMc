@@ -30,13 +30,16 @@ public class ArmorBase extends ItemArmor implements IHasModel
 		Main.proxy.registerItemRender(this, 0, "inventory");
 	}
 	
+	
 	@Override
 	public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack) 
 	{
-		if(player.inventory.armorItemInSlot(3).getItem() == ModItems.line_bag)
+		if(!world.isRemote)
 		{
-			player.addPotionEffect(new PotionEffect(Potion.getPotionById(2), 0, 257));
-			player.closeScreen();
+			if(itemStack.getItem() == ModItems.line_bag)
+			{
+				player.addPotionEffect(new PotionEffect(Potion.getPotionById(2), 0, 257));
+			}
 		}
 	}
 }

@@ -119,10 +119,10 @@ public class ModelKretoszczur extends ModelBase {
     @Override
     public void setRotationAngles(float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch, float scaleFactor, Entity entityIn) 
     {
-    	this.Noga1.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F) * 0.6F * limbSwingAmount;
-    	this.Noga4.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F + (float)Math.PI) * 0.6F * limbSwingAmount;
-    	this.Noga3.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F + (float)Math.PI) * 0.6F * limbSwingAmount;
-    	this.Noga2.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F) * 0.6F * limbSwingAmount;
+    	this.Noga1.rotateAngleX = -0.9998991284675514F + MathHelper.cos(limbSwing * 0.6662F) * 0.6F * limbSwingAmount;
+    	this.Noga4.rotateAngleX = 0.5846852994181004F + MathHelper.cos(limbSwing * 0.6662F + (float)Math.PI) * 0.6F * limbSwingAmount;
+    	this.Noga3.rotateAngleX = 0.5846852994181004F + MathHelper.cos(limbSwing * 0.6662F + (float)Math.PI) * 0.6F * limbSwingAmount;
+    	this.Noga2.rotateAngleX = -0.9983283321407564F + MathHelper.cos(limbSwing * 0.6662F) * 0.6F * limbSwingAmount;
     }
     
 }

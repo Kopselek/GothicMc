@@ -2,6 +2,7 @@ package gothickopselek;
 
 import gothickopselek.blocks.TileEntity.TileEntityCloud;
 import gothickopselek.client.BagEvents;
+import gothickopselek.client.PlayerJump;
 import gothickopselek.init.ModEntity;
 import gothickopselek.init.ModPotion;
 import gothickopselek.server.BW;
@@ -50,6 +51,7 @@ public class CommonProxy
 		MinecraftForge.EVENT_BUS.register(new NoName());
 		MinecraftForge.EVENT_BUS.register(new BagEvents());
 		MinecraftForge.EVENT_BUS.register(new DamageEvent());
+		MinecraftForge.EVENT_BUS.register(new PlayerJump());
 	}
 	
 	public void serverInit(FMLServerStartingEvent event) 

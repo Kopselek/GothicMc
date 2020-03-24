@@ -48,7 +48,17 @@ public class SoundHandler
 	public static SoundEvent goblin_hurt;
 	public static SoundEvent goblin_attack;
 	
-	private static int size = 32;
+	public static SoundEvent wilk_ambient;
+	public static SoundEvent wilk_death;
+	public static SoundEvent wilk_hurt;
+	public static SoundEvent wilk_attack;
+	
+	public static SoundEvent PolnaBestia_ambient;
+	public static SoundEvent PolnaBestia_death;
+	public static SoundEvent PolnaBestia_hurt;
+	public static SoundEvent PolnaBestia_attack;
+	
+	private static int size = 40;
 	
 	public static void init()
 	{
@@ -95,6 +105,15 @@ public class SoundHandler
 		goblin_hurt = register("goblin_hurt");
 		goblin_attack = register("goblin_attack");
 		
+		wilk_ambient = register("wilk_ambient");
+		wilk_death = register("wilk_death");
+		wilk_hurt = register("wilk_hurt");
+		wilk_attack = register("wilk_attack");
+		
+		PolnaBestia_ambient = register("PolnaBestia_ambient");
+		PolnaBestia_death = register("PolnaBestia_death");
+		PolnaBestia_hurt = register("PolnaBestia_hurt");
+		PolnaBestia_attack = register("PolnaBestia_attack");
 	}
 	
 	public static SoundEvent register(String name) 

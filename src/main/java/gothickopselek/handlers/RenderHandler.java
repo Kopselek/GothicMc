@@ -16,8 +16,10 @@ import gothickopselek.entity.EntityFlower9;
 import gothickopselek.entity.EntityGoblin;
 import gothickopselek.entity.EntityGoblin2;
 import gothickopselek.entity.EntityKretoszczur;
+import gothickopselek.entity.EntityPolnaBestia;
 import gothickopselek.entity.EntityScierwojad;
 import gothickopselek.entity.EntityTopielec;
+import gothickopselek.entity.EntityWilk;
 import gothickopselek.entity.EntityZebacz;
 import gothickopselek.entity.render.RenderCieniostwor;
 import gothickopselek.entity.render.RenderFlower1;
@@ -35,8 +37,10 @@ import gothickopselek.entity.render.RenderFlower9;
 import gothickopselek.entity.render.RenderGoblin;
 import gothickopselek.entity.render.RenderGoblin2;
 import gothickopselek.entity.render.RenderKretoszczur;
+import gothickopselek.entity.render.RenderPolnaBestia;
 import gothickopselek.entity.render.RenderScierwojad;
 import gothickopselek.entity.render.RenderTopielec;
+import gothickopselek.entity.render.RenderWilk;
 import gothickopselek.entity.render.RenderZebacz;
 import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.client.renderer.entity.RenderManager;
@@ -234,6 +238,26 @@ public class RenderHandler
 			public Render<? super EntityGoblin2> createRenderFor(RenderManager manager) 
 			{
 				return new RenderGoblin2(manager);
+			}
+			
+		});
+		RenderingRegistry.registerEntityRenderingHandler(EntityWilk.class, new IRenderFactory<EntityWilk>()
+		{
+
+			@Override
+			public Render<? super EntityWilk> createRenderFor(RenderManager manager) 
+			{
+				return new RenderWilk(manager);
+			}
+			
+		});
+		RenderingRegistry.registerEntityRenderingHandler(EntityPolnaBestia.class, new IRenderFactory<EntityPolnaBestia>()
+		{
+
+			@Override
+			public Render<? super EntityPolnaBestia> createRenderFor(RenderManager manager) 
+			{
+				return new RenderPolnaBestia(manager);
 			}
 			
 		});

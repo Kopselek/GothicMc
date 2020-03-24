@@ -77,7 +77,7 @@ public class ModelGoblin2 extends ModelBase {
     }
     @Override
     public void setRotationAngles(float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch, float scaleFactor, Entity entityIn) {
-    	this.Noga1.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F) * 0.6F * limbSwingAmount;
-    	this.Noga2.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F + (float)Math.PI) * 0.6F * limbSwingAmount;
+    	this.Noga1.rotateAngleX = -0.6829473363053812F + MathHelper.cos(limbSwing * 0.6662F) * 0.6F * limbSwingAmount;
+    	this.Noga2.rotateAngleX = -0.6829473363053812F + MathHelper.cos(limbSwing * 0.6662F + (float)Math.PI) * 0.6F * limbSwingAmount;
     }
 }

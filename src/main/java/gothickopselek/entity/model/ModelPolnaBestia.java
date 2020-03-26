@@ -3,6 +3,7 @@ package gothickopselek.entity.model;
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
+import net.minecraft.util.math.MathHelper;
 
 /**
  * PolnaBestia - Sprint2DJ
@@ -147,5 +148,15 @@ public class ModelPolnaBestia extends ModelBase {
         modelRenderer.rotateAngleX = x;
         modelRenderer.rotateAngleY = y;
         modelRenderer.rotateAngleZ = z;
+    }
+    
+    @Override
+    public void setRotationAngles(float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw,
+    		float headPitch, float scaleFactor, Entity entityIn) 
+    {
+        this.Noga1.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F) * limbSwingAmount;
+        this.Noga2.rotateAngleX = 0.6373942428283291F + MathHelper.cos(limbSwing * 0.6662F) * limbSwingAmount;
+        this.Noga2_1.rotateAngleX = -1.0927506446736497F + MathHelper.cos(limbSwing * 0.6662F + (float)Math.PI) * limbSwingAmount;
+        this.Noga1_1.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F + (float)Math.PI) * limbSwingAmount;
     }
 }

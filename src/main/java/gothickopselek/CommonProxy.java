@@ -6,11 +6,11 @@ import gothickopselek.client.PlayerJump;
 import gothickopselek.init.ModEntity;
 import gothickopselek.init.ModPotion;
 import gothickopselek.server.BW;
-import gothickopselek.server.DamageEvent;
 import gothickopselek.server.MessageServer;
-import gothickopselek.server.RightClickEventCustom;
 import gothickopselek.server.NameFormat;
 import gothickopselek.server.NoName;
+import gothickopselek.server.RightClickEventCustom;
+import gothickopselek.server.commands.CommandCk;
 import gothickopselek.server.commands.CommandImie;
 import gothickopselek.server.commands.CommandPlayLute;
 import gothickopselek.server.commands.CommandSprimie;
@@ -50,12 +50,12 @@ public class CommonProxy
 		MinecraftForge.EVENT_BUS.register(new RightClickEventCustom());
 		MinecraftForge.EVENT_BUS.register(new NoName());
 		MinecraftForge.EVENT_BUS.register(new BagEvents());
-		MinecraftForge.EVENT_BUS.register(new DamageEvent());
 		MinecraftForge.EVENT_BUS.register(new PlayerJump());
 	}
 	
 	public void serverInit(FMLServerStartingEvent event) 
 	{
+		event.registerServerCommand(new CommandCk());
 		event.registerServerCommand(new CommandImie());
 		event.registerServerCommand(new CommandSprimie());
 		event.registerServerCommand(new CommandZmienimie());

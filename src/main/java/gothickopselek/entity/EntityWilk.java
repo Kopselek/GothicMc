@@ -15,7 +15,7 @@ public class EntityWilk extends EntityPig
 {
 	public EntityWilk(World worldIn) {
 		super(worldIn);
-		this.setSize(4.0F, 4.0F);
+		this.setSize(3.0F, 2.0F);
 	}
 	
 	

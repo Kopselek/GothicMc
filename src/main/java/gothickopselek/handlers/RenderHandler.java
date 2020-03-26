@@ -19,6 +19,7 @@ import gothickopselek.entity.EntityKretoszczur;
 import gothickopselek.entity.EntityPolnaBestia;
 import gothickopselek.entity.EntityScierwojad;
 import gothickopselek.entity.EntityTopielec;
+import gothickopselek.entity.EntityWarg;
 import gothickopselek.entity.EntityWilk;
 import gothickopselek.entity.EntityZebacz;
 import gothickopselek.entity.render.RenderCieniostwor;
@@ -40,6 +41,7 @@ import gothickopselek.entity.render.RenderKretoszczur;
 import gothickopselek.entity.render.RenderPolnaBestia;
 import gothickopselek.entity.render.RenderScierwojad;
 import gothickopselek.entity.render.RenderTopielec;
+import gothickopselek.entity.render.RenderWarg;
 import gothickopselek.entity.render.RenderWilk;
 import gothickopselek.entity.render.RenderZebacz;
 import net.minecraft.client.renderer.entity.Render;
@@ -258,6 +260,16 @@ public class RenderHandler
 			public Render<? super EntityPolnaBestia> createRenderFor(RenderManager manager) 
 			{
 				return new RenderPolnaBestia(manager);
+			}
+			
+		});
+		RenderingRegistry.registerEntityRenderingHandler(EntityWarg.class, new IRenderFactory<EntityWarg>()
+		{
+
+			@Override
+			public Render<? super EntityWarg> createRenderFor(RenderManager manager) 
+			{
+				return new RenderWarg(manager);
 			}
 			
 		});

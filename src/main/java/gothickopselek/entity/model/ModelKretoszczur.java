@@ -69,7 +69,7 @@ public class ModelKretoszczur extends ModelBase {
         this.Lydka3.addBox(0.0F, 0.0F, 0.0F, 7, 14, 5, 0.0F);
         this.setRotateAngle(Lydka3, -1.5481070465189704F, 0.0F, 0.0F);
         this.Noga1 = new ModelRenderer(this, 10, 100);
-        this.Noga1.setRotationPoint(-9.9F, 1.0F, 39.3F);
+        this.Noga1.setRotationPoint(-9.9F, 12.8F, 39.3F);
         this.Noga1.addBox(0.0F, 0.0F, 0.0F, 10, 16, 11, 0.0F);
         this.setRotateAngle(Noga1, -0.9998991284675514F, 0.0F, 0.0F);
         this.Glowa = new ModelRenderer(this, 171, 27);
@@ -100,6 +100,7 @@ public class ModelKretoszczur extends ModelBase {
         this.Tlow.addChild(this.Noga3);
         this.Noga2.addChild(this.Lydka2);
         this.Tlow.addChild(this.Noga4);
+        this.Tlow.addChild(this.Noga1);
     }
 
     @Override

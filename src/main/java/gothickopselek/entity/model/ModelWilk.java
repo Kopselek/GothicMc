@@ -3,6 +3,7 @@ package gothickopselek.entity.model;
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
+import net.minecraft.util.math.MathHelper;
 
 /**
  * Wilk - Sprint2DJ
@@ -249,5 +250,15 @@ public class ModelWilk extends ModelBase {
         modelRenderer.rotateAngleX = x;
         modelRenderer.rotateAngleY = y;
         modelRenderer.rotateAngleZ = z;
+    }
+    
+    @Override
+    public void setRotationAngles(float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw,
+    		float headPitch, float scaleFactor, Entity entityIn) 
+    {
+        this.Noga1.rotateAngleX = 0.40980330836826856F + MathHelper.cos(limbSwing * 0.6662F) * 1.4F * limbSwingAmount;
+        this.Noga2.rotateAngleX = 0.40980330836826856F + MathHelper.cos(limbSwing * 0.6662F + (float)Math.PI) * 1.4F * limbSwingAmount;
+        this.Noga3.rotateAngleX = -0.18203784098300857F + MathHelper.cos(limbSwing * 0.6662F + (float)Math.PI) * 1.4F * limbSwingAmount;
+        this.Noga4.rotateAngleX = -0.18203784098300857F + MathHelper.cos(limbSwing * 0.6662F) * 1.4F * limbSwingAmount;
     }
 }

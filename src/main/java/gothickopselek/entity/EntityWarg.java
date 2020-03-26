@@ -11,11 +11,11 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class EntityPolnaBestia extends EntityPig
+public class EntityWarg extends EntityPig
 {
-	public EntityPolnaBestia(World worldIn) {
+	public EntityWarg(World worldIn) {
 		super(worldIn);
-		this.setSize(2.0F, 2.0F);
+		this.setSize(3.0F, 2.0F);
 	}
 	
 	

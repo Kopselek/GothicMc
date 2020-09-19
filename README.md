@@ -11,4 +11,5 @@ Project Features:
 - New items
 
 Project trailer (Youtube): https://www.youtube.com/watch?v=UY9rLs12ZIE&t=75s
+
 Project features presentation (Youtube) : https://www.youtube.com/channel/UCjzaqVwrFEiBkehMTb1QDNQ/videos
